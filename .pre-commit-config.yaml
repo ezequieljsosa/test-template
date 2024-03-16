@@ -1,0 +1,30 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+    -   id: check-added-large-files
+    -   id: trailing-whitespace
+    -   id: detect-private-key
+
+-   repo: https://github.com/janisozaur/pretty-format-json
+    rev: "v1.3.0"
+    hooks:
+    -   id: pretty-format-json
+        args: ['--autofix']
+
+-   repo: https://github.com/janisozaur/pretty-format-yaml
+    rev: "v1.3.0"
+    hooks:
+    -   id: pretty-format-yaml
+        args: ['--autofix']
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+    -   id: checkstyle
+    -   id: pmd
+
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.3.0
+    hooks:
+    -   id: gitlab-ci-linter
